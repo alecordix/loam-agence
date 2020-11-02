@@ -3,22 +3,23 @@ rouge: #EC6663;
 
 
 */
-
 * {
   font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-margin:0;
-padding:0;
-background: url(images/bg3.jpg) no-repeat center;
-background-size: contain;
-background-position: top;
-z-index: -1000;
+  margin: 0;
+  padding: 0;
+  background: url(images/bg3.jpg) no-repeat center;
+  background-size: contain;
+  background-position: top;
+  z-index: -1000;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .sticky-top {
@@ -28,34 +29,31 @@ z-index: -1000;
 .navbar .navbar-brand {
   font-size: 30px;
 }
+
 .navbar .nav-item {
   padding: 10px 20px;
 }
+
 .navbar .nav-link {
   font-size: 1vw;
   margin-left: 10px;
   color: white;
 }
+
 .fa-bars {
   color: white;
   font-size: 20px;
 }
 
-.nav-item, a:active{
-  text-decoration: underline;
-  text-decoration-color: #EC6663;
-  font-weight: bold;
-}
-
-.nav-item{
+.active {
   color: #FFF;
-  font-weight: 300;
-  text-decoration: none;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-.nav-item:hover{
+.nav-item a:hover {
   text-decoration: underline;
-  text-decoration-color: #EC6663;
+  text-decoration-color: #FFFFFF;
   font-weight: bold;
 }
 
@@ -70,9 +68,10 @@ main {
 .lp {
   height: 100%;
   display: flex;
-  width:100%
-  flex-direction: row;
+  width: 100% flex-direction: row;
+  margin-top: -10%;
 }
+
 /*TEXT*/
 .text {
   padding: 104px 304px 80px 5%;
@@ -88,7 +87,6 @@ main {
 }
 
 /* BUTTONS */
-
 .btn {
   color: #fff;
   cursor: pointer;
@@ -101,16 +99,16 @@ main {
   width: 100%;
 }
 
-.button .text-btn{
-  color:white;
+.button .text-btn {
+  color: white;
 }
 
 .button .text-btn:hover {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
-.text-btn{
+.text-btn {
   color: white;
   font-size: 1.5vw;
 }
@@ -121,26 +119,23 @@ main {
 }
 
 .btn-1, .text-btn:hover {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-  }
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
 
 /* SECTION VALEURS */
-
 #valeurs {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 2rem !important;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  padding-bottom: 2rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-.card{
+.card {
   border-radius: 0px;
 }
 
-.card-interior{
+.card-interior {
   margin: 5%;
 }
 
@@ -149,35 +144,77 @@ main {
   width: 60px;
 }
 
-.card-title{
-font-family: 'Merriweather', 'Poppins', sans-serif;
-color: white;
-font-weight: 900;
-font-size: 3vw;
-margin-left: 5%;
+.card-title {
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 3vw;
+  margin-left: 5%;
 }
 
-.card-text{
+.card-text {
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 1.2vw;
 }
 
-/* MEDIA QUERIES */
+/* QUI SOMMES-NOUS ? */
+#about {
+  height: 1000px;
+  margin-top: 10vh;
+}
 
-@media screen and (max-width: 940px) {
+#about img {
+  width: 100%;
+}
+
+#about .title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #15152A;
+  margin-top: 10%;
+}
+
+#about .hr {
+  float: left;
+  width: 20%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: auto;
+}
+
+#about p {
+  text-align: justify;
+  color: #15152A;
+}
+
+/* SECTION CO-FREELANCING */
+
+#co-freelancing{
+  height:1000px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: url(images/) no-repeat center 100%;
+  background-size: contain;
+  z-index: -1000;
+  margin-top: -20%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
   .navbar .nav-link {
     font-size: 3vw;
     color: white;
   }
+
   body {
-  margin:0;
-  padding:0;
-  background: url(images/bg.jpg) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  background-position: top;
-  z-index: -1000;
+    background-image: url(images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    z-index: -1000;
   }
 
   .text h1 {
@@ -199,19 +236,19 @@ margin-left: 5%;
     width: 100%;
   }
 
-  .text-btn{
+  .text-btn {
     color: white;
     font-size: 3vw;
   }
 
-  .card-title{
-  font-family: 'Merriweather', 'Poppins', sans-serif;
-  color: white;
-  font-size: 5vw;
-  margin-left: 5%;
+  .card-title {
+    font-family: 'Merriweather', 'Poppins', sans-serif;
+    color: white;
+    font-size: 5vw;
+    margin-left: 5%;
   }
 
-  .card-text{
+  .card-text {
     font-size: 3.5vw;
   }
 
