@@ -16,4 +16,7 @@ A modifier sur photoshop pour enlever 2 marches d'escaliers pour ne pas cacher l
 Faites. Texte à écrire.
 
 **Qui sommes-nous? :**
-En cours.
+Fait / En attente de validation.
+Texte à écrire.
+
+
