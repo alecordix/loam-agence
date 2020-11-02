@@ -16,7 +16,9 @@ body {
 margin:0;
 padding:0;
 background: url(images/bg3.jpg) no-repeat center;
-background-size: cover;
+background-size: contain;
+background-position: top;
+z-index: -1000;
 }
 
 .sticky-top {
@@ -39,10 +41,22 @@ background-size: cover;
   font-size: 20px;
 }
 
-.nav-item .active a{
+.nav-item, a:active{
   text-decoration: underline;
   text-decoration-color: #EC6663;
-  text-decoration-style: wavy;
+  font-weight: bold;
+}
+
+.nav-item{
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  text-decoration-color: #EC6663;
+  font-weight: bold;
 }
 
 main {
@@ -87,11 +101,11 @@ main {
   width: 100%;
 }
 
-button text-btn{
+.button .text-btn{
   color:white;
 }
 
-button text-btn:hover {
+.button .text-btn:hover {
   color:white;
   text-decoration: none;
 }
@@ -122,18 +136,55 @@ button text-btn:hover {
     padding-right: 1rem;
   }
 
+.card{
+  border-radius: 0px;
+}
+
+.card-interior{
+  margin: 5%;
+}
+
+.card-img {
+  margin-top: 10%;
+  width: 60px;
+}
+
+.card-title{
+font-family: 'Merriweather', 'Poppins', sans-serif;
+color: white;
+font-weight: 900;
+font-size: 3vw;
+margin-left: 5%;
+}
+
+.card-text{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.2vw;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 940px) {
   .navbar .nav-link {
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
   }
   body {
   margin:0;
   padding:0;
-  background: url(images/bg.jpg) no-repeat center 100%;
+  background: url(images/bg.jpg) no-repeat center;
   background-size: cover;
+  width: 100%;
+  background-position: top;
+  z-index: -1000;
+  }
+
+  .text h1 {
+    font-size: 8vw;
+    font-weight: 900;
+    font-family: 'Merriweather', 'Poppins', sans-serif;
+    margin: 40px 0 0;
   }
 
   .btn {
@@ -151,6 +202,17 @@ button text-btn:hover {
   .text-btn{
     color: white;
     font-size: 3vw;
+  }
+
+  .card-title{
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  color: white;
+  font-size: 5vw;
+  margin-left: 5%;
+  }
+
+  .card-text{
+    font-size: 3.5vw;
   }
 
 }
