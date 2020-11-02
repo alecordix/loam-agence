@@ -20,6 +20,18 @@ body {
   overflow-x: hidden;
 }
 
+#services-tarifs{
+  background: black;
+}
+
+.btn-1 .fa-arrow-right{
+  display: none;
+}
+
+.btn-1:hover .fa-arrow-right{
+display: table-cell;
+}
+
 .sticky-top {
   background-color: black;
 }
@@ -88,7 +100,6 @@ main {
 .btn {
   color: #fff;
   cursor: pointer;
-  font-weight: 400;
   margin: 0 0 2em;
   max-width: 280px;
   min-height: 80px;
@@ -108,12 +119,13 @@ main {
 
 .text-btn {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
+  font-weight: 600;
 }
 
 .btn-1 {
   background: transparent;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .btn-1, .text-btn:hover {
@@ -216,9 +228,8 @@ main {
 
 /* SECTION CO-FREELANCING */
 #co-freelancing {
-  background: url(images/bg-fusee.png) no-repeat center;
+  background: url(images/bg-color.jpg) no-repeat center;
   background-size: cover;
-  height: 500px;
   display: table;
 }
 
@@ -232,12 +243,41 @@ main {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #F9EFE5;
+  margin-left: 4%;
 }
 
 #co-freelancing .text {
   color: #F9EFE5;
   margin-top: -4%;
+  margin-left: 4%;
 }
+
+/* SECTION CTA NOS SERVICES */
+#cta-projets .btn-2{
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  font-weight: 600;
+}
+
+#cta-projets .text-btn2 {
+  color: #15152A;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+#cta-projets .btn-2:hover a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+#cta-projets .btn-2:hover {
+  background-color: #15152A;
+  color: #FFFFFF;
+}
+
+
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 767px) {
