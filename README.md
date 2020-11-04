@@ -4,7 +4,7 @@ Bienvenue dans ce Git mes amis !
 
 En avant pour LOAM | Agence de co-freelancing
 
-****Maj : 02/11/2020 par Andrea**** 
+****Maj : 02/11/2020 par Andrea****
 
 **ATTENTION : BIEN ADAPTER POUR RESPONSIVE // MEDIA QUERIES**
 
@@ -21,4 +21,14 @@ Faites. Texte à écrire.
 Fait / En attente de validation.
 Texte à écrire.
 
+****Services & Tarifs****
+En cours / Galère pour les cards (branding, site vitrine, ...)
 
+****Projets****
+A faire
+
+****Contact****
+A faire
+
+****Footer****
+A faire
