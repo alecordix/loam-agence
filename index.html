@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <script src="header.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,14 +21,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto w-100 justify-content-end">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">à propos de nous</a>
+            <a class="nav-link lien-actif" href="index.html">à propos de nous</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services-tarifs.html">services &amp; tarifs</a>
           <li class="nav-item">
-            <a class="nav-link" href="#">projets</a>
+            <a class="nav-link" href="projets.html">projets</a>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="contact.html">contact</a>
           </li>
         </ul>
       </div>
@@ -123,29 +123,38 @@
 
     <section id="about">
       <div class="row col-md-12">
-        <div class="col-md-6 col-sm-12">
-          <img src="images/group.jpg" alt="">
+        <div class="img-about col-md-6 col-sm-12">
+          <div class="groups">
+            <div class="content">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="images/group.jpg">
+                <div class="content-details fadeIn-left">
+                  <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="#teams">découvrir l'équipe</a></button>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="bloc col-md-5 col-xs-12" style="margin-left:5%;">
-          <h1 class="title">Qui sommes-nous ?</h1>
-          <hr class="hr col-2"><br>
-          <br><br><br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquam at commodi consequatur dolor, dolore doloremque ex harum
-            inventore, iure iusto maiores nam perferendis quidem ratione rem
-            sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquam at commodi consequatur dolor, dolore doloremque ex harum
-            inventore, iure iusto maiores nam perferendis quidem ratione rem
-            sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquam at commodi consequatur dolor, dolore doloremque ex harum
-            inventore, iure iusto maiores nam perferendis quidem ratione rem
-            sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquam at commodi consequatur dolor, dolore doloremque ex harum
-            inventore, iure iusto maiores nam perferendis quidem ratione rem
-            sed tempore veniam voluptatum.
-          </p>
-        </div>
+          <div class="bloc col-md-5 col-xs-12" style="margin-left:5%;">
+            <h1 class="title">Qui sommes-nous ?</h1>
+            <hr class="hr col-2"><br>
+            <br><br><br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam at commodi consequatur dolor, dolore doloremque ex harum
+              inventore, iure iusto maiores nam perferendis quidem ratione rem
+              sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam at commodi consequatur dolor, dolore doloremque ex harum
+              inventore, iure iusto maiores nam perferendis quidem ratione rem
+              sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam at commodi consequatur dolor, dolore doloremque ex harum
+              inventore, iure iusto maiores nam perferendis quidem ratione rem
+              sed tempore veniam voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam at commodi consequatur dolor, dolore doloremque ex harum
+              inventore, iure iusto maiores nam perferendis quidem ratione rem
+              sed tempore veniam voluptatum.
+            </p>
+          </div>
       </div>
     </section><br><br><br>
 
@@ -154,6 +163,7 @@
     <section id="co-freelancing">
       <div class="bg col-md-10">
         <h1 class="title col-md-6">C'est quoi le co-freelancing ?</h1>
+        <hr class="hr col-2">
         <p class="text col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lacinia ipsum eu scelerisque. Mauris elementum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lacinia ipsum
           eu scelerisque. Mauris elementum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales lacinia ipsum eu scelerisque. Mauris elementum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
@@ -162,8 +172,83 @@
     <!-- SECTION NOS PROJETS -->
 
     <section id="cta-projets"><br><br><br>
-      <button type="button" class="btn btn-2 col-md-3" name="button" style="border:3px solid #15152A; border-radius: 0px;"><a class="text-btn2" href="#valeurs">découvrez nos projets</a></button>
+      <button type="button" class="btn btn-2 col-md-3" name="button" style="border:3px solid #15152A; border-radius: 0px;"><a class="text-btn2" href="projets.html">découvrez nos projets</a></button>
     </section>
+
+
+    <!-- LA TEAM -->
+
+    <section id="teams">
+      <div class="teams">
+        <div class="at-section">
+          <h1 class="title">L'équipe</h1>
+          <hr class="hr col-2"><br><br>
+        </div>
+        <div class="at-grid" data-column="4">
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/team/andrea.jpg" /></div>
+              <div class="at-user__name">Andréa LECORDIX</div>
+              <div class="at-user__title">Développement Web &amp; Graphisme</div><br>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/dribbble.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/linkedin.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/behance.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/team/sacha.jpg" /></div>
+              <div class="at-user__name">Sacha REUSA</div>
+              <div class="at-user__title">Web Marketing &amp; SEA</div><br>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/dribbble.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/linkedin.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/behance.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/team/hugo.jpg" /></div>
+              <div class="at-user__name">Hugo LHOPITAL</div>
+              <div class="at-user__title">UX Researcher & UX Designer</div><br>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/dribbble.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/linkedin.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/behance.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <div class="at-user__avatar"><img src="images/team/bastien.jpg" /></div>
+              <div class="at-user__name">Bastien AGULLO</div>
+              <div class="at-user__title">UX Designer</div><br>
+              <ul class="at-social">
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/dribbble.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/linkedin.svg"></a></li>
+                <li class="at-social__item"><a href="">
+                    <img src="images/svg/behance.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
