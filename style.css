@@ -25,6 +25,10 @@ body {
   background: black;
 }
 
+#projets {
+  background: black;
+}
+
 #services-tarifs #lp .branding:hover, .vitrine:hover, .supports:hover .btn-2 {
   width: 100%;
 }
@@ -693,6 +697,29 @@ main {
 }
 
 /* PAGE PROJETS */
+
+#nav-projets {
+  display: flex;
+  justify-content: center;
+}
+
+#a-nav-projet {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-right: solid 5px #EC6663;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#a-nav-projet:last-child {
+  border-right: hidden;
+}
+
+#a-nav-projet:hover {
+  color: #EC6663;
+}
+
 #projets a {
   text-decoration: none;
   color: white;
@@ -705,7 +732,7 @@ main {
 }
 
 #projets #scene {
-  background-color: #304056;
+  /* background-color: #304056; */
   position: relative;
   overflow: hidden;
   width: 100%;
