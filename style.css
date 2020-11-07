@@ -74,7 +74,7 @@ body {
   font-size: 1vw;
   margin-left: 10px;
   color: white;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .navbar .lien-actif {
@@ -597,15 +597,27 @@ main {
   flex-wrap: wrap;
   margin-top: 5%;
   margin-bottom: 5%;
+  transition: ease 2s;
+}
+
+#services .panel-body .livrables {
+  width: 20%;
+  text-align: justify;
+  margin-left: 5%;
 }
 
 #services .panel-body .details {
-  width: 50%;
+  width: 30%;
   text-align: justify;
 }
 
-#services .panel-body .details h3 {
-  color: #EC6663;
+#services .panel-body .details p {
+font-size: 1.1vw;
+text-align: justify;
+}
+
+#services .panel-body .details h3, #services .panel-body .livrables h3 {
+  color: white;
   font-size: 2vw;
 }
 
@@ -655,7 +667,7 @@ main {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Merriweather', 'Poppins', sans-serif;
-  color: white;
+  color: #EC6663;
   font-size: 3.5vw;
 }
 
@@ -676,7 +688,7 @@ main {
 }
 
 #services .panel-default>.panel-heading a[aria-expanded="true"] {
-  color: white;
+  color: #EC6663;
   text-align: justify;
 }
 
