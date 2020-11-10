@@ -863,7 +863,6 @@ main {
 #projets #headline {
   text-align: center;
   width: 100%;
-  margin-left: -1%;
   display: table;
   margin-top: -3%;
 }
@@ -917,11 +916,11 @@ main {
 #projets .image-projet img{
   width: 65%;
   float: left;
-  margin-top: -5%;
   max-height: auto;
 }
 
 #projets .image-projet {
+  margin-left: 1%;
   margin-bottom: 40%;
 }
 
@@ -1023,6 +1022,10 @@ main {
 
 #projets .content {
   max-height: 350px;
+}
+
+#projets {
+  width: 100vw;
 }
 
 #projets button {
