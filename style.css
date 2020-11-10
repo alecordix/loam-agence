@@ -612,8 +612,8 @@ main {
 }
 
 #services .panel-body .details p {
-font-size: 1.1vw;
-text-align: justify;
+  font-size: 1.1vw;
+  text-align: justify;
 }
 
 #services .panel-body .details h3, #services .panel-body .livrables h3 {
@@ -716,6 +716,63 @@ text-align: justify;
   margin: 0;
 }
 
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#myBtnContainer button {
+  cursor: pointer;
+  align-content: space-around;
+  margin-right: -4%;
+  margin-left: -4%;
+}
+
+#myBtnContainer button:hover {
+  color: #EC6663;
+}
+
+#myBtnContainer .active {
+  color: #EC6663;
+}
+
+/* FIN PAGE PROJETS */
 #projets #scene {
   background-color: #304056;
   position: relative;
@@ -803,6 +860,83 @@ text-align: justify;
   background-position: 50% 50%;
 }
 
+#projets #headline {
+  text-align: center;
+  width: 100%;
+  margin-left: -1%;
+  display: table;
+  margin-top: -3%;
+}
+
+#projets #headline button {
+  margin-left: -5%;
+  margin-right: -5%;
+  color: #15152A;
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: auto;
+}
+
+#projets #headline h2 {
+  font-size: 2vw;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #15152A;
+}
+
+#projets .containers {
+  color: #15152A;
+}
+
+#projets .containers h2 {
+  font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+#projets .hr-resume {
+  float: left;
+  width: 15%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: 1%;
+}
+
+#projets .containers p {
+  text-align: justify;
+}
+
+#projets .hr-details {
+  float: left;
+  width: 20%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: 1%;
+}
+
+#projets .image-projet img{
+  width: 65%;
+  float: left;
+  margin-top: -5%;
+  max-height: auto;
+}
+
+#projets .image-projet {
+  margin-bottom: 40%;
+}
+
+#projets .btn-3 a {
+  color: #15152A;
+}
+
+#projets .btn-3:hover {
+  background-color: #15152A;
+}
+
+#projets .btn-3:hover a {
+  color: white;
+}
+
 @media only screen and (max-width:1200px) {
   #scene .layer .col {
     width: 16.666%;
@@ -834,14 +968,14 @@ text-align: justify;
   }
 }
 
-#about .content {
+#about .content, #projets .content {
   position: relative;
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-#about .content .content-overlay {
+#about .content .content-overlay, #projets .content .content-overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   height: 100%;
@@ -856,7 +990,7 @@ text-align: justify;
   transition: all 0.4s ease-in-out 0s;
 }
 
-#about .content:hover .content-overlay {
+#about .content:hover .content-overlay, #projets .content:hover .content-overlay {
   opacity: 1;
 }
 
@@ -864,7 +998,7 @@ text-align: justify;
   width: 100%;
 }
 
-#about .content-details {
+#about .content-details, #projets .content-details {
   position: absolute;
   text-align: center;
   padding-left: 1em;
@@ -881,10 +1015,23 @@ text-align: justify;
   transition: all 0.5s ease 0s;
 }
 
-#about .content:hover .content-details {
+#about .content:hover .content-details, #projets .content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
+}
+
+#projets .content {
+  max-height: 350px;
+}
+
+#projets button {
+  font-weight: bold;
+  color: white;
+}
+
+#projets button:hover {
+  color: #EC6663;
 }
 
 /* BACK TO TOP BUTTON */
