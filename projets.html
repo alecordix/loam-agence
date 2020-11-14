@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Loam | Services &amp; Tarifs</title>
+  <title>Loam | Agence de co-freelancing</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons.min.css">
-  <script src="js/header.js"></script>
-  <script type="text/javascript" src="js/angular-webicon-core.min.js"></script>
-  <script type="text/javascript" src="js/angular-webicon.min.js"></script>
-  <script type="text/javascript" src="js/jquery-webicon-core.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body id="projets">
+<body id="services-tarifs">
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img width="100vw;" src="images/logo_blanc.svg" /></a>
@@ -28,9 +25,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">à propos de nous</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services-tarifs.html">services &amp; tarifs</a>
           <li class="nav-item active">
+            <a class="nav-link" href="services-tarifs.html">services &amp; tarifs</a>
+          <li class="nav-item">
             <a class="nav-link lien-actif" href="projets.html">projets</a>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">contact</a>
@@ -328,73 +325,160 @@
             </div>
             <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img11.jpg);"></div>
           </a>
+
+  <main>
+    <section id="projets">
+      <div class="lp__item text col-md-12 col-xs-12">
+        <h1 style="margin-left:5%;">Nos projets.</h1><br><br><br><br><br>
+        <div id="myBtnContainer" class="col-md-12">
+          <button class="btn" onclick="filterSelection('branding')"> Branding</button>
+          <button class="btn" onclick="filterSelection('site-vitrine')"> Site vitrine</button>
+          <button class="btn" onclick="filterSelection('seo-sea')"> SEO & SEA</button>
+          <button class="btn" onclick="filterSelection('print')"> Print</button>
+          <button class="btn" onclick="filterSelection('site e-commerce')"> E-commerce</button>
         </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
-              </div>
-              <div class="more"><i class="demo-icon icon-plus"></i></div>
-            </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img1.jpg);"></div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
-              </div>
-              <div class="more"><i class="demo-icon icon-plus"></i></div>
-            </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img2.jpg);"></div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column branding">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/nike.jpg" alt="image Nike" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" target="_blank" href="projet-nike.html">Nike</a></button>
               </div>
             </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img3.jpg);"></div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
+          </div>
+          <div class="column branding">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/nasa.jpg" alt="image Nasa" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="projet-nasa.html">NASA</a></button>
               </div>
-              <div class="more"><i class="demo-icon icon-plus"></i></div>
             </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img4.jpg);"></div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
+          </div>
+          <div class="column branding">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/lyon.jpg" alt="image Lyon" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="projet-lyon.html">Ville de Lyon</a></button>
               </div>
-              <div class="more"><i class="demo-icon icon-plus"></i></div>
             </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img5.jpg);"></div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            <div class="hover">
-              <div class="pad align-bottom">
-                <h2>Project Title</h2>
+          </div>
+          <div class="column site-vitrine">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/apple.jpg" alt="image Apple" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="projet-apple.html">Apple</a></button>
               </div>
-              <div class="more"><i class="demo-icon icon-plus"></i></div>
             </div>
-            <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img6.jpg);"></div>
-          </a>
+          </div>
+          <div class="column site-vitrine">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/hotel.jpg" alt="image Hotel" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="projet-hotel.html">Hotel</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="column seo-sea">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="images/projets/museum.jpg" alt="image Museum" style="width:100%">
+              <div class="content-details">
+                <button type="button" class="btn btn-1" name="button" style="border:3px solid #EC6663; border-radius: 0px;"><a class="text-btn" href="projet-museum.html">Museum</a></button>
+              </div>
+            </div>
+          </div>
+
+<!-- AUTRES PROJETS
+
+          <div class="column vitrine">
+            <div class="content">
+              <img src="images/team/sacha.jpg" alt="Sacha" style="width:100%">
+            </div>
+          </div>
+          <div class="column vitrine">
+            <div class="content">
+              <img src="images/team/sacha.jpg" alt="Sacha" style="width:100%">
+            </div>
+          </div>
+          <div class="column vitrine">
+            <div class="content">
+              <img src="images/team/sacha.jpg" alt="Sacha" style="width:100%">
+            </div>
+          </div>
+
+          <div class="column seo-sea">
+            <div class="content">
+              <img src="images/team/hugo.jpg" alt="hugo" style="width:100%">
+            </div>
+          </div>
+          <div class="column seo-sea">
+            <div class="content">
+              <img src="images/team/hugo.jpg" alt="Hugo" style="width:100%">
+            </div>
+          </div>
+          <div class="column seo-sea">
+            <div class="content">
+              <img src="images/team/hugo.jpg" alt="Hugo" style="width:100%">
+            </div>
+          </div>
         </div>
-      </div>
+
+        FIN AUTRES PROJETS -->
+
     </section>
   </main>
+
+
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
 </body>
