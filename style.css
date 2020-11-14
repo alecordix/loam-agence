@@ -1,69 +1,1415 @@
-.navbar {
-    transition: all 0.4s;
+/*
+rouge: #EC6663;
+
+*/
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar .nav-link {
-    color: transparent;
+html {
+  scroll-behavior: smooth;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: transparent;
-    text-decoration: none;
+body {
+  margin: 0;
+  padding: 0;
+  background: url(images/bg2.jpg) no-repeat center;
+  background-size: contain;
+  background-position: top;
+  z-index: -1000;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#services-tarifs {
+  background: black;
+}
+
+#services-tarifs #lp .branding:hover, .vitrine:hover, .supports:hover .btn-2 {
+  width: 100%;
+}
+
+#lp .btn-2 .fa-arrow-right {
+  display: none;
+}
+
+#lp .btn-2 {
+  border: 4px solid #EC6663;
+  border-radius: 0px;
+}
+
+#lp .btn-2:hover .fa-arrow-right {
+  display: table-cell;
+  margin-left: 20%;
+}
+
+#lp .btn-2:hover {
+  background-color: #EC6663;
+  transition: ease 0.5s;
+}
+
+#lp .text-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+#lp .btn-2:hover .text-btn {
+  color: #FFFFFF;
+  transition: ease 0.5s;
+}
+
+.sticky-top {
+  background-color: black;
 }
 
 .navbar .navbar-brand {
-    color: transparent;
+  font-size: 30px;
 }
 
-
-/* Change navbar styling on scroll */
-.navbar.active {
-    background: transparent;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+.navbar .nav-item {
+  padding: 10px 20px;
 }
 
-.navbar.active .nav-link {
+.navbar .nav-link {
+  font-size: 1vw;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .lien-actif {
+  font-size: 1vw;
+  margin-left: 10px;
+  color: #EC6663;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 20px;
+}
+
+.active {
+  color: #EC6663;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EC6663;
+  font-weight: bold;
+}
+
+.nav-item .lien-actif:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#lp {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-left: 5%;
+}
+
+/*TEXT*/
+.text {
+  padding: 104px 304px 80px 5%;
+  width: 100%;
   color: white;
 }
 
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-  color: white;
-    text-decoration: none;
+.text h1 {
+  font-size: 5vw;
+  font-weight: 900;
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  margin: 40px 0 0;
 }
 
-.navbar.active .navbar-brand {
+/* BUTTONS */
+.btn {
+  color: #fff;
+  cursor: pointer;
+  margin: 0 0 2em;
+  max-width: 280px;
+  min-height: 80px;
+  text-decoration: none;
+  text-transform: none;
+  width: 100%;
+}
+
+.button .text-btn {
+  color: white;
+}
+
+.button .text-btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.text-btn {
+  color: white;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+.btn-1 {
+  background: transparent;
+  font-weight: 600;
+  transition: ease 0.5s ease;
+}
+
+.btn-1 .text-btn:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-1:hover {
+  background-color: #EC6663;
+  transition: 0.5s ease;
+}
+
+/* SECTION VALEURS */
+#valeurs {
+  padding-bottom: 2rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transform: scale(0.9);
+}
+
+#valeurs hr {
+  background-color: white;
+}
+
+#valeurs .card {
+  border-radius: 0px;
+  background-color: #EC6663;
+}
+
+#valeurs .card:hover {
+  background-color: #15152A;
+  color: #F9EFE5;
+}
+
+#valeurs .card:hover h1 {
+  color: #F9EFE5;
+}
+
+#valeurs .card:hover p {
+  color: #F9EFE5;
+}
+
+#valeurs .card:hover .card-interior .title hr {
+  background-color: #F9EFE5;
+}
+
+#teams hr {
+  background-color: #F9EFE5;
+}
+
+.card-interior {
+  margin: 5%;
+}
+
+.card-img {
+  margin-top: 10%;
+  width: 60px;
+}
+
+.card-title {
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 3vw;
+  margin-left: 5%;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.2vw;
+}
+
+/* QUI SOMMES-NOUS ? */
+#about {
+  height: auto;
+  margin-top: 10vh;
+  transform: scale(0.9);
+}
+
+#about img {
+  width: 100%;
+}
+
+#about img .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+/* Apparition overlay sur passage souris */
+#about img:hover {
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about img {
+  transition: .5s ease;
+}
+
+#about .title, #teams .title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #15152A;
+  margin-top: 10%;
+}
+
+#about .hr {
+  float: left;
+  width: 20%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: auto;
+}
+
+#teams .hr {
+  float: left;
+  width: 5%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: auto;
+}
+
+#co-freelancing .hr {
+  width: 8%;
+  float: left;
+  margin-left: 5%;
+  height: 5px;
+  background-color: white;
+  margin-top: auto;
+}
+
+#about p {
+  text-align: justify;
+  color: #15152A;
+}
+
+/* SECTION CO-FREELANCING */
+#co-freelancing {
+  background: url(images/bg-color.jpg) no-repeat center;
+  background-size: cover;
+  display: table;
+}
+
+#co-freelancing .bg {
+  padding-top: 6%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#co-freelancing .title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #F9EFE5;
+  margin-left: 4%;
+}
+
+#co-freelancing .text {
+  color: #F9EFE5;
+  margin-top: -4%;
+  margin-left: 4%;
+}
+
+/* SECTION CTA NOS SERVICES */
+#cta-projets .btn-2 {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+#cta-projets .text-btn2 {
+  color: #15152A;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+#cta-projets .btn-2:hover a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: 0.5s left ease;
+}
+
+#cta-projets .btn-2:hover {
+  background-color: #15152A;
+  color: #FFFFFF;
+}
+
+/* LA TEAM */
+.at-section__title {
+  margin: 0 0 70px;
+  color: #000;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 2.625rem;
+  text-align: center;
+}
+
+.at-grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #FFF;
+  border: none;
+}
+
+.at-grid[data-column="4"] .at-column {
+  width: 25%;
+  max-width: 25%;
+  flex-basis: 25%;
+  min-width: 25%;
+}
+
+.at-column {
+  z-index: 0;
+  position: relative;
+  background: #FFFFFF;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.at-column:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.at-column:hover {
+  z-index: 1;
+  border-radius: 1.5%;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+}
+
+.at-column:hover .at-social {
+  opacity: 1;
+  margin-left: -15%;
+}
+
+@media (max-width: 800px) {
+  .at-column {
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 50% !important;
+    flex-basis: 50% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .at-column {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  .at-colum:hover .at-social {
+    opacity: 1;
+    margin-top: 15%;
+  }
+}
+
+.at-user {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+.at-user__avatar {
+  width: 98px;
+  height: 98px;
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.at-user__avatar img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.at-user__name {
+  color: #15152A;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+}
+
+.at-user__title {
+  color: #15152A;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 2.375rem;
+}
+
+.at-social {
+  margin-left: -15%;
+  display: block;
+  opacity: 0;
+  -webkit-transition: margin 0.5s ease, opacity 0.5s ease;
+  transition: margin 0.5s ease, opacity 0.5s ease;
+}
+
+.at-social__item {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.at-social__item a {
+  display: block;
+}
+
+.at-social__item img {
+  fill: #EC6663;
+  display: block;
+  height: 18px;
+  -webkit-transition: fill 0.2s ease;
+  transition: fill 0.2s ease;
+}
+
+.at-social__item img:hover {
+  fill: #15152A;
+}
+
+.teams {
+  max-width: 1170px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px) {
+  .navbar .nav-link {
+    font-size: 3vw;
     color: white;
+  }
+
+  body {
+    background-image: url(images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    z-index: -1000;
+  }
+
+  .text h1 {
+    font-size: 8vw;
+    font-weight: 900;
+    font-family: 'Merriweather', 'Poppins', sans-serif;
+    margin: 40px 0 0;
+  }
+
+  .btn {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0 0 2em;
+    max-width: 280px;
+    min-height: 80px;
+    text-decoration: none;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .text-btn {
+    color: white;
+    font-size: 3vw;
+  }
+
+  .card-title {
+    font-family: 'Merriweather', 'Poppins', sans-serif;
+    color: white;
+    font-size: 5vw;
+    margin-left: 5%;
+  }
+
+  .card-text {
+    font-size: 3.5vw;
+  }
 }
 
-#main-navbar .nav-item a{
+/* PAGE SERVICES & TARIFS */
+.containers {
+  margin: 0 auto;
+  display: block;
+  width: 90vw;
+}
+
+#services .panel-default {
+  width: 100%;
+  border-top: 1px solid white;
+  padding-top: 4%;
+  padding-bottom: auto;
+}
+
+#services .panel-body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transition: ease 2s;
+}
+
+#services .panel-body .livrables {
+  width: 20%;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+#services .panel-body .details {
+  width: 30%;
+  text-align: justify;
+}
+
+#services .panel-body .details p {
+  font-size: 1.1vw;
+  text-align: justify;
+}
+
+#services .panel-body .details h3, #services .panel-body .livrables h3 {
+  color: white;
+  font-size: 2vw;
+}
+
+#services .panel-body .tarifs-bloc {
+  width: 30%;
+  margin-left: 15%;
+  float: right;
+  display: table;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+  background-color: #EC6663;
+}
+
+#services .panel-body .tarifs-bloc .texts {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+#services .panel-body .tarifs-bloc .texts a {
+  text-decoration: underline;
+  font-size: 1.2vw;
+  color: white;
+}
+
+#services .panel-body .tarifs-bloc .texts a:hover {
+  text-decoration: underline;
+  font-size: 1.2vw;
+  color: #15152A;
+}
+
+#services .panel-default>.panel-heading {
+  color: white;
+  background-color: transparent;
+  border-color: #EC6663;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#services .panel-default>.panel-heading a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  color: #EC6663;
+  font-size: 3.5vw;
+}
+
+#services .panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Merriweather', 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+}
+
+#services .panel-default>.panel-heading a[aria-expanded="true"] {
+  color: #EC6663;
+  text-align: justify;
+}
+
+#services .panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#services .panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* PAGE PROJETS */
+#projets a {
+  text-decoration: none;
+  color: white;
+}
+
+#projets h2 {
+  font-family: "Voltaire";
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#myBtnContainer button {
+  cursor: pointer;
+  align-content: space-around;
+  margin-right: -4%;
+  margin-left: -4%;
+}
+
+#myBtnContainer button:hover {
+  color: #EC6663;
+}
+
+#myBtnContainer .active {
+  color: #EC6663;
+}
+
+/* FIN PAGE PROJETS */
+#projets #scene {
+  background-color: #304056;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#scene .layer {
+  pointer-events: none;
+}
+
+#scene .col {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 12.5%;
+  pointer-events: all;
+  overflow: initial;
+  margin: 0 0 30px;
+}
+
+#scene .layer.main {
+  width: 150%;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+}
+
+#scene .col a {
+  display: block;
+  margin: 15px;
+  overflow: hidden;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.37);
+}
+
+#scene .col a .hover {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: -15px;
+  left: 15px;
+  z-index: 1;
+  color: white;
+  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78000000', endColorstr='#00000000', GradientType=1);
+}
+
+#scene .col a .hover:after {
+  content: '';
+  position: absolut;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgb(235, 116, 152);
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+#scene .col a .hover:hover:after {
+  opacity: 0.85;
+  transition: 0.35s ease;
+}
+
+#scene .align-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  z-index: 2;
+  padding: 15px 20px;
+}
+
+#scene .bg-img {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#projets #headline {
+  text-align: center;
+  width: 100%;
+  display: table;
+  margin-top: -3%;
+}
+
+#projets #headline button {
+  margin-left: -5%;
+  margin-right: -5%;
+  color: #15152A;
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: auto;
+}
+
+#projets #headline h2 {
+  font-size: 2vw;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #15152A;
+}
+
+#projets .containers {
+  color: #15152A;
+}
+
+#projets .containers h2 {
+  font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+#projets .hr-resume {
+  float: left;
+  width: 15%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: 1%;
+}
+
+#projets .containers p {
+  text-align: justify;
+}
+
+#projets .hr-details {
+  float: left;
+  width: 20%;
+  height: 5px;
+  background-color: #EC6663;
+  margin-top: 1%;
+}
+
+#projets .image-projet img {
+  width: 65%;
+  float: left;
+  max-height: auto;
+}
+
+#projets .image-projet {
+  margin-left: 1%;
+  margin-bottom: 40%;
+}
+
+#projets .btn-3 a {
+  color: #15152A;
+}
+
+#projets .btn-3:hover {
+  background-color: #15152A;
+}
+
+#projets .btn-3:hover a {
+  color: white;
+}
+
+@media only screen and (max-width:1200px) {
+  #scene .layer .col {
+    width: 16.666%;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  #scene .layer .col {
+    width: 25%;
+  }
+}
+
+/* PHOTO DE GROUPE */
+#about .groups {
+  padding: 1em 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  #about .groups {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #about .groups {
+    width: 100%;
+  }
+}
+
+#about .content, #projets .content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#about .content .content-overlay, #projets .content .content-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#about .content:hover .content-overlay, #projets .content:hover .content-overlay {
+  opacity: 1;
+}
+
+#about .content-image {
+  width: 100%;
+}
+
+#about .content-details, #projets .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#projets .content-details:hover a {
+  color: white;
+}
+
+#about .content:hover .content-details, #projets .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+#projets .content {
+  max-height: 350px;
+}
+
+#projets {
+  width: 100vw;
+}
+
+#projets button {
+  font-weight: bold;
+  color: white;
+}
+
+#projets button:hover {
+  color: #EC6663;
+}
+
+/* BACK TO TOP BUTTON */
+/* PAGE CONTACT */
+#contact-page {
+  background-image: none;
+  background-color: black;
+}
+
+#contact {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#contact input placeholder {
+  color: white;
+}
+
+#contact hr {
+  background-color: black;
+}
+
+#contact label {
+  color: white;
+  font-size: 1.3vw;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#contact .contact-us {
+  padding: 50px 100px;
+  background-color: black;
+}
+
+#contact input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  margin-bottom: 28pt;
+  border: none;
+  color: white;
+  border-bottom: 3px solid black;
+  background-color: black;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+}
+
+#contact input:focus {
+  border-bottom: 3px solid #EC6662;
+  color: white;
+}
+
+#contact button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 3px solid #EC6663;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+#contact .btn-1 {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: white;
+  transition: 0.2s all ease;
+  outline: none;
+  border: 3px solid #EC6663;
+  box-shadow: 3px 3px 1px #EC6663, 3px 3px 1px 1px black;
+}
+
+#contact button a {
+  color: black;
+}
+
+#contact button:hover a {
+  color: white;
+}
+
+#contact button:hover {
+  background: #EC6663;
+  color: white;
+  border: 3px solid #EC6663;
+  box-shadow: 3px 3px 1px white, 3px 3px 1px 1px black;
+}
+
+#contact input {
+  border-bottom: 3px solid white;
+  transition: background-color 300ms ease 1s;
+}
+
+#contact input:-webkit-autofill:hover,
+#contact input:-webkit-autofill:focus {
+  border-bottom: 3px solid #EC6663;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000ms ease 1s;
+}
+
+#contact section {
+  width: 100%;
+  min-height: inherit;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+}
+
+#contact section::after {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #EC6663;
+  top: 11px;
+  left: 11px;
+}
+
+.dark {
+  --primary: hsl(1, 100%, 68%);
+  --other: hsl(0, 0%, 90%);
+  background: hsl(0, 0%, 10%);
+}
+
+/* .design */
+#content .design {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--other);
+  border-radius: 100%;
+  margin-right: 16px;
+  position: relative;
+}
+
+#content .design::before,
+#content .design::after {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+#content .design:before {
+  background: var(--other);
+  opacity: 0;
+  transition: .3s;
+}
+
+#content .design::after {
+  background: var(--primary);
+  opacity: .4;
+  transition: .6s;
+}
+
+/* .text */
+#content .text {
+  color: var(--other);
+  font-weight: bold;
+}
+
+/* checked state */
+#content input:checked+.design::before {
+  opacity: 1;
+  transform: scale(.6);
+}
+
+/* other states */
+#content input:hover+.design,
+#content input:focus+.design {
+  border: 1px solid var(--primary);
+}
+
+#content input:hover+.design:before,
+#content input:focus+.design:before {
+  background: var(--primary);
+}
+
+#content input:hover~.text {
+  color: var(--primary);
+}
+
+#content input:focus+.design::after,
+#content input:active+.design::after {
+  opacity: .1;
+  transform: scale(2.6);
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: black;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  font-weight: 300;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+}
+
+.site-footer a {
   color: white;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  text-transform: lowercase;
-margin-right: 2vw;
 }
 
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-      color: white;
-    }
-
-    .navbar .navbar-brand, .navbar .nav-link {
-      color: white;
-    }
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
 }
 
-.text-small {
-    font-size: 0.9rem !important;
+.footer-links {
+  padding-left: 0;
+  list-style: none;
 }
 
+.footer-links li {
+  display: block;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
 
-body {
-    min-height: 100vh;
-    background-color: #4ca1af;
-    background-image: url("images/bg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.footer-links a {
+  color: white;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #EC6663;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: white;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text, .site-footer .social-icons {
+    text-align: center
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px
+}
+
+.social-icons a.behance, a.linkedin, a.dribbble {
+  background-color: white;
+  color: black;
+}
+
+.social-icons a.behance:hover {
+  background-color: #0057ff;
+  color: white;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+  color: white;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+  color: white;
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600
+  }
 }
