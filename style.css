@@ -167,7 +167,7 @@ main {
   transition: ease 0.5s ease;
 }
 
-.btn-1 a:hover{
+.btn-1 a:hover {
   color: blue;
 }
 
@@ -626,11 +626,35 @@ main {
   #cta-projets button .text-btn2 {
     font-size: 4vw;
   }
+}
 
-  #teams .at-social__item img {
+/* PAGE EQUIPE */
 
-  }
+#page-equipe {
+  background: none;
+  background-color: black;
+  width:100vw;
+}
 
+#equipe{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equipe1 {
+  background-image: url(images/team/andrea.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.equipe2 {
+  background-image: url(images/team/sacha.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* PAGE SERVICES & TARIFS */
@@ -674,6 +698,12 @@ main {
 #services .panel-body .details h3, #services .panel-body .livrables h3 {
   color: white;
   font-size: 2vw;
+  text-align: justify;
+  text-align-last: left;
+}
+
+#services .panel-body li p {
+  text-align: left;
 }
 
 #services .panel-body .tarifs-bloc {
@@ -1106,199 +1136,57 @@ main {
 #contact {
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
-
-
-#contact input placeholder {
-  color: black;
-}
-
-#contact hr {
-  background-color: black;
+#contact div.elem-group {
+  margin: 40px 0;
 }
 
 #contact label {
-  color: black;
-  font-size: 1.3vw;
-  font-family: 'Poppins', 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-#contact .contact-us {
-  padding: 50px 100px;
-  background-color: white;
-}
-
-#contact input {
   display: block;
-  width: 100%;
-  font-size: 14pt;
-  line-height: 28pt;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  margin-bottom: 28pt;
-  border: none;
-  color: black;
-  border-bottom: 3px solid black;
-  background-color: white;
-  min-width: 250px;
-  padding-left: 5px;
-  outline: none;
+  padding-bottom: 4px;
+  font-size: 1.25em;
+  color: white;
 }
 
-#contact input:focus {
-  border-bottom: 3px solid #EC6662;
-  color: black;
+#contact input, #contact select, #contact textarea {
+  border-bottom: 3px solid #EC6663;
+  background-color: black;
+  font-size: 1.25em;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  width: 500px;
+  color: white;
+  padding: 8px;
+  box-shadow: none;
+}
+
+#contact input, #contact select, #contact textarea {
+  border-bottom: none;
+}
+
+#contact input:after {
+  border-bottom: 3px solid #EC6663;
 }
 
 #contact textarea {
-  border-radius:
+  height: 250px;
+  resize: vertical;
 }
 
 #contact button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 3px solid #EC6663;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-}
-
-#contact .btn-1 {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: white;
-  transition: 0.2s all ease;
-  outline: none;
-  border: 3px solid #EC6663;
-  box-shadow: 3px 3px 1px #EC6663, 3px 3px 1px 1px black;
-}
-
-#contact button a {
-  color: black;
-}
-
-#contact button:hover a {
+  height: 50px;
+  background: green;
   color: white;
+  border: 2px solid darkgreen;
+  font-size: 1.25em;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 #contact button:hover {
-  background: #EC6663;
-  color: white;
-  border: 3px solid #EC6663;
-  box-shadow: 3px 3px 1px white, 3px 3px 1px 1px black;
-}
-
-#contact input {
-  border-bottom: 3px solid black;
-  transition: background-color 300ms ease 1s;
-}
-
-#contact input:-webkit-autofill:hover,
-#contact input:-webkit-autofill:focus {
-  border-bottom: 3px solid #EC6663;
-  -webkit-text-fill-color: #2A293E;
-  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-  transition: background-color 5000ms ease 1s;
-}
-
-#contact section {
-  width: 100%;
-  min-height: inherit;
-  justify-content: center;
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  position: relative;
-}
-
-#contact section::after {
-  width: 42px;
-  height: 42px;
-  border: 1px solid #EC6663;
-  top: 11px;
-  left: 11px;
-}
-
-.dark {
-  --primary: hsl(1, 100%, 68%);
-  --other: hsl(0, 0%, 90%);
-  background: hsl(0, 0%, 10%);
-}
-
-/* .design */
-#content .design {
-  width: 16px;
-  height: 16px;
-  border: 1px solid var(--other);
-  border-radius: 100%;
-  margin-right: 16px;
-  position: relative;
-}
-
-#content .design::before,
-#content .design::after {
-  content: "";
-  display: block;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  position: absolute;
-  transform: scale(0);
-  transform-origin: center center;
-}
-
-#content .design:before {
-  background: var(--other);
-  opacity: 0;
-  transition: .3s;
-}
-
-#content .design::after {
-  background: var(--primary);
-  opacity: .4;
-  transition: .6s;
-}
-
-/* .text */
-#content .text {
-  color: var(--other);
-  font-weight: bold;
-}
-
-/* checked state */
-#content input:checked+.design::before {
-  opacity: 1;
-  transform: scale(.6);
-}
-
-/* other states */
-#content input:hover+.design,
-#content input:focus+.design {
-  border: 1px solid var(--primary);
-}
-
-#content input:hover+.design:before,
-#content input:focus+.design:before {
-  background: var(--primary);
-}
-
-#content input:hover~.text {
-  color: var(--primary);
-}
-
-#content input:focus+.design::after,
-#content input:active+.design::after {
-  opacity: .1;
-  transform: scale(2.6);
+  border: 2px solid black;
 }
 
 /* FOOTER */
