@@ -1,7 +1,9 @@
 /*
 rouge: #EC6663;
 
+FAIRE MEDIA QUERIES > 1 500px
 */
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -12,6 +14,8 @@ html {
 
 body {
   margin: 0;
+  overflow: overlay;
+  overflow-y: overlay;
   padding: 0;
   background: url(images/bg2.jpg) no-repeat center;
   background-size: contain;
@@ -157,7 +161,7 @@ main {
 
 .text-btn {
   color: white;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 600;
 }
 
@@ -611,7 +615,7 @@ main {
     margin-top: -15%;
   }
 
-  h1, .title, #co-freelancing .title {
+  h2, .title, #co-freelancing .title {
     font-size: 7vw;
   }
 
@@ -631,30 +635,77 @@ main {
 /* PAGE EQUIPE */
 
 #page-equipe {
-  background: none;
-  background-color: black;
   width:100vw;
 }
 
-#equipe{
+#equipe main{
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
+}
+#page-equipe section {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: rgba(0,0,0,0.5);
+  font-size: 2rem;
+  min-height: 100%;
+  height: 100vh;
 }
 
-.equipe1 {
-  background-image: url(images/team/andrea.jpg);
-  height: 80vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+#page-equipe .nav__item {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.equipe2 {
-  background-image: url(images/team/sacha.jpg);
-  height: 80vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+#page-equipe .item {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding: 0.5em;
+  display: block;
+}
+
+#page-equipe .item li {
+  border
+}
+
+#page-equipe .item:hover,
+#page-equipe .item:active {
+  color: #EC6663;
+}
+
+#page-equipe #A {
+  background-color: white;
+}
+
+#page-equipe #andrea {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page-equipe #B {
+  background-color: white;
+  height: 600px;
+}
+
+#page-equipe #C {
+  background-color: white;
+}
+
+#page-equipe #D {
+  background-color: white;
+  height: 200px;
 }
 
 /* PAGE SERVICES & TARIFS */
@@ -673,8 +724,8 @@ main {
 
 #services .panel-body {
   display: flex;
+  margin-top:5%;
   flex-wrap: wrap;
-  margin-top: 5%;
   margin-bottom: 5%;
   transition: ease 2s;
 }
@@ -847,10 +898,14 @@ main {
   align-content: space-around;
   margin-right: -4%;
   margin-left: -4%;
+  border:none;
+  box-shadow: none;
 }
 
 #myBtnContainer button:hover {
   color: #EC6663;
+  border: none;
+  box-shadow: none;
 }
 
 #myBtnContainer .active {
@@ -1361,4 +1416,28 @@ main {
     margin-right: 0;
     font-weight: 600
   }
+}
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EC6663;
+  border-radius: 0px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EC6663;
 }
