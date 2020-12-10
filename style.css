@@ -1,9 +1,9 @@
 /*
 rouge: #EC6663;
-
+bleu : #15152A;
+beige : #       ;
 FAIRE MEDIA QUERIES > 1 500px
 */
-
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -17,12 +17,26 @@ body {
   overflow: overlay;
   overflow-y: overlay;
   padding: 0;
-  background: url(images/bg2.jpg) no-repeat center;
+  background: url(images/bg2.webp) no-repeat center;
   background-size: contain;
   background-position: top;
   z-index: -1000;
   width: 100%;
   overflow-x: hidden;
+}
+
+#page-equipe h1, #services h1, #projets h1, #lp h1 {
+  font-size:5vw;
+  font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+@media only screen and (max-width:767px) {
+  #page-equipe h1, #services h1, #projets h1, #lp h1 {
+    font-size:8vw;
+    font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
 }
 
 #services-tarifs {
@@ -64,6 +78,7 @@ body {
 
 .sticky-top {
   background-color: black;
+  z-index: -4000;
 }
 
 .navbar .navbar-brand {
@@ -87,9 +102,17 @@ body {
   color: #EC6663;
 }
 
-.fa-bars {
-  color: white;
-  font-size: 20px;
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.navbar-toggler .material-icons {
+  color:white;
 }
 
 .active {
@@ -129,13 +152,6 @@ main {
   padding: 104px 304px 80px 5%;
   width: 100%;
   color: white;
-}
-
-.text h1 {
-  font-size: 5vw;
-  font-weight: 900;
-  font-family: 'Merriweather', 'Poppins', sans-serif;
-  margin: 40px 0 0;
 }
 
 /* BUTTONS */
@@ -339,9 +355,10 @@ main {
 
 /* SECTION CO-FREELANCING */
 #co-freelancing {
-  background: url(images/bg-color.jpg) no-repeat center;
+  background: url(images/bg-mac.webp) no-repeat center;
   background-size: cover;
   display: table;
+  opacity: 1;
 }
 
 #co-freelancing .bg {
@@ -565,21 +582,21 @@ main {
   }
 
   body {
-    background-image: url(images/bg2.jpg);
+    background-image: url(images/bg2.webp);
     margin: 0;
     padding: 0;
     background-size: contain;
     background-position: top;
-    z-index: -1000;
+    z-index: -5000;
   }
 
-  .text h1 {
+  /* .text h1 {
     font-size: 5vw;
     font-weight: 900;
     font-family: 'Merriweather', 'Poppins', sans-serif;
     margin: 10% 0 0;
     margin-top: -15%;
-  }
+  } */
 
   .btn {
     color: #fff;
@@ -633,79 +650,74 @@ main {
 }
 
 /* PAGE EQUIPE */
-
 #page-equipe {
-  width:100vw;
+  background: black;
 }
 
-#equipe main{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-}
-#page-equipe section {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  color: rgba(0,0,0,0.5);
-  font-size: 2rem;
-  min-height: 100%;
-  height: 100vh;
+#page-equipe h1 {
+  font-family: 'Merriweather', 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
-#page-equipe .nav__item {
-  position: fixed;
-  z-index: 1;
-  margin: 0;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.section-team {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
 }
 
-#page-equipe .item {
-  color: black;
-  text-decoration: none;
-  font-size: 1.3em;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  padding: 0.5em;
-  display: block;
+.section-team .header-section {
+  margin-bottom: 50px;
 }
 
-#page-equipe .item li {
-  border
+.section-team .header-section .small-title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
 }
 
-#page-equipe .item:hover,
-#page-equipe .item:active {
-  color: #EC6663;
+.section-team .header-section .title {
+  font-weight: 700;
+  font-size: 45px;
 }
 
-#page-equipe #A {
-  background-color: white;
+.section-team .single-person {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: transparent;
+  border-radius: 5px;
 }
 
-#page-equipe #andrea {
-    display: flex;
-    flex-wrap: wrap;
+.section-team .single-person:hover {
+  background: #EC6663;
 }
 
-#page-equipe #B {
-  background-color: white;
-  height: 600px;
+.section-team .single-person .person-image {
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border: 4px dashed transparent;
+  transition: padding .3s;
 }
 
-#page-equipe #C {
-  background-color: white;
+.section-team .single-person .person-image img {
+  width: 100%;
+  border-radius: 50%;
 }
 
-#page-equipe #D {
-  background-color: white;
-  height: 200px;
+.section-team .single-person .person-info .full-name {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.section-team .single-person .person-info .speciality {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+  color: #fff;
 }
 
 /* PAGE SERVICES & TARIFS */
@@ -724,7 +736,7 @@ main {
 
 #services .panel-body {
   display: flex;
-  margin-top:5%;
+  margin-top: 5%;
   flex-wrap: wrap;
   margin-bottom: 5%;
   transition: ease 2s;
@@ -865,7 +877,7 @@ main {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   display: none;
   /* Hide all elements by default */
 }
@@ -898,7 +910,7 @@ main {
   align-content: space-around;
   margin-right: -4%;
   margin-left: -4%;
-  border:none;
+  border: none;
   box-shadow: none;
 }
 
@@ -1193,55 +1205,52 @@ main {
   padding: 0;
 }
 
-#contact div.elem-group {
+div.elem-group {
   margin: 40px 0;
 }
 
-#contact label {
+label {
   display: block;
   font-family: 'Poppins', 'Montserrat', sans-serif;
   padding-bottom: 4px;
-  font-size: 1.25em;
   color: white;
+  font-size: 1.25em;
 }
 
-#contact input, #contact select, #contact textarea {
-  border-bottom: 3px solid #EC6663;
-  background-color: black;
+input,
+select,
+textarea {
   font-size: 1.25em;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  width: 500px;
-  color: white;
-  padding: 8px;
+  background-color: white;
   box-shadow: none;
+  border: none;
+  color: black;
+  width: 500px;
+  padding: 20px;
+  font-weight: 400;
 }
 
-#contact input, #contact select, #contact textarea {
-  border-bottom: none;
-}
-
-#contact input:after {
-  border-bottom: 3px solid #EC6663;
-}
-
-#contact textarea {
+textarea {
   height: 250px;
-  resize: vertical;
 }
 
-#contact button {
+#contact .buttons button {
   height: 50px;
-  background: green;
-  color: white;
-  border: 2px solid darkgreen;
+  background: transparent;
+  color: #EC6663;
   font-size: 1.25em;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  border-radius: 4px;
   cursor: pointer;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
 }
 
-#contact button:hover {
-  border: 2px solid black;
+#contact .buttons button:hover {
+  background: #EC6663;
+  color: white;
+  font-weight: 600;
 }
 
 /* FOOTER */
@@ -1419,7 +1428,6 @@ main {
 }
 
 /* SCROLLBAR */
-
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -1434,7 +1442,6 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #EC6663;
   border-radius: 0px;
-
 }
 
 /* Handle on hover */
